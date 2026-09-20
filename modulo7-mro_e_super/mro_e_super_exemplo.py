@@ -1,0 +1,14 @@
+class A:
+    def quem_sou(self):
+        print("metodo de A")
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+
+class D(B, C):
+    pass
+
+print(D.__mro__)
